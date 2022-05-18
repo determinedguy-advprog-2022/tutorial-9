@@ -6,10 +6,10 @@
 
 Jawaban: TBA.
 
-2. Berdasarkan hasil Profiling yang anda dapatkan, jelaskan analisis anda terhadap keadaan aplikasi saat ini.
+2. Berdasarkan hasil Profiling yang Anda dapatkan, jelaskan analisis Anda terhadap keadaan aplikasi saat ini.
 
 Jawaban: TBA.
 
-3. Bagaimana anda mengintepretasikan temuan anda? Jelaskan dan berikan gambar screenshot setiap graph query yang anda dapatkan dari dashboard Prometheus dan Grafana.
+3. Bagaimana Anda mengintepretasikan temuan Anda? Jelaskan dan berikan gambar screenshot setiap graph query yang Anda dapatkan dari dashboard Prometheus dan Grafana.
 
 Jawaban: TBA.
