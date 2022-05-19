@@ -4,7 +4,7 @@
 
 1. Bagaimana mengatur Grafana agar menampilkan data Prometheus?
 
-Jawaban: TBA.
+Jawaban: Untuk mendapatkan data dari Prometheus, kita perlu menambahkan _data source_. Pilih menu `Configuration -> Data sources` kemudian pilih `Add data source`. Pilih opsi Prometheus dan isi URL dengan URL Prometheus (`http://localhost:9090`). Klik `Save & test` untuk menyimpan dan mengecek apakah data Prometheus berhasil diambil oleh Grafana.
 
 2. Berdasarkan hasil Profiling yang Anda dapatkan, jelaskan analisis Anda terhadap keadaan aplikasi saat ini.
 
