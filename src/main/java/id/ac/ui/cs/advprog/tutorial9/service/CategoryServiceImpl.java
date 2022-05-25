@@ -4,6 +4,7 @@ import id.ac.ui.cs.advprog.tutorial9.model.Article;
 import id.ac.ui.cs.advprog.tutorial9.model.Category;
 import id.ac.ui.cs.advprog.tutorial9.repository.CategoryRepository;
 
+import java.util.Comparator;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,12 +28,16 @@ public class CategoryServiceImpl implements CategoryService{
         // get most Recent Article
         for(var cat : allCat) {
 
-            Article mostRecent = cat.getArticles().get(0);
-            for(var art : cat.getArticles()) {
-                if(art.getCreatedAt().getTime() > mostRecent.getCreatedAt().getTime()) {
-                    mostRecent = art;
-                }
-            }
+            List<Article> articleList = cat.getArticles();
+            // Utilizing built-in merge sort
+            articleList.sort(Comparator.comparing(Article::getCreatedAt).reversed());
+
+            Article mostRecent = articleList.get(0);
+//            for(var art : cat.getArticles()) {
+//                if(art.getCreatedAt().getTime() > mostRecent.getCreatedAt().getTime()) {
+//                    mostRecent = art;
+//                }
+//            }
 
             cat.setMostRecentArticle(mostRecent.getJudul());
             cat.setNumArticles(cat.getArticles().size());
